@@ -12,3 +12,5 @@ test('statement with new play types', () => {
     const plays = JSON.parse(fs.readFileSync('test/new_plays.json', 'utf8'));
     expect(() => {statement(invoice, plays)}).toThrow(/unknown type/);
 });
+
+
